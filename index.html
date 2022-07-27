@@ -5,66 +5,176 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferreteria Popular</title>
-    <link rel="stylesheet" href="CSS/style.css">
     <link rel="shortcut icon" href="img/ferreteria.jpg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
-<body>
+<body class="container-fluid">
     <header>
-        <div class="encabezado">
-            <img data-aos="fade-up" src="img/ferreteria-1.png" width="200" height="200" alt="Logo ferreteria"> 
-        <nav>
-            <ul>
-                <li><a href="pages/nuestraempresa.html" class="botones">Nuestra empresa</a></li>
-                <li><a href="pages/preguntasfrecuentes.html" class="botones">Preguntas frecuentes</a></li>
-                <li><a href="pages/contacto.html" class="botones">Contacto</a></li>
-            </ul>
-        </nav> 
-        </div>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/ferreteria-1.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/nuestraempresa.html">Nuestra Empresa</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/preguntasfrecuentes.html">Preguntas frecuentes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <h1>Marcas que nos acompañan</h1>
         <div class="marcas">
             <ul>
                 <li>
-                    <img src="img/marcaJardineria.jpg" alt="jardineria">
+                    <img class="img-fluid" src="img/marcaJardineria.jpg" alt="jardineria">
                 </li>
                 <li>
-                    <img src="img/marcaElectricidad.jpg" alt="electricidad">
+                    <img class="img-fluid" src="img/marcaElectricidad.jpg" alt="electricidad">
                 </li>
             </ul>
         </div>
-        <nav class="segundoMenu">
-            <ul>
-                <li><a href="pages/construccion.html" class="botonesDos">Construcción</a></li>
-                <li><a href="pages/electricidad.html" class="botonesDos">Electricidad</a></li>
-                <li><a href="pages/pinturas.html" class="botonesDos">Pinturas</a></li>
-                <li><a href="pages/jardineria.html" class="botonesDos">Jardinería</a></li>
-                <li><a href="pages/alquileres.html" class="botonesDos">Alquileres</a></li>
-            </ul>
-        </nav>
+        <div class="navBar">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categorias
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="pages/construccion.html">Construccion</a></li>
+                          <li><a class="dropdown-item" href="pages/electricidad.html">Electricidad</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="pages/jardineria.html">Jardineria</a></li>
+                          <li><a class="dropdown-item" href="pages/pinturas.html">Pinturas</a></li>
+                        </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/alquileres.html">Alquileres</a>
+                          </li>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
     </main>
     <!-- las imagenes de section no son las definitivas -->
-    <section class="section">
-        <h2>Oferta de la semana</h2>
-        <div class="contenido">
-            <img src="img/escalera.jpg" width="100" height="100" alt="Oferta de la semana">
+    <div class="fondoIndex">
+        <h2>Ofertas de la semana</h2>
+        <ul class="galeria">
+           <li><a href="#img1"><img src="img/oferta01.jpg" alt="Oferta 1"></a></li>
+           <li><a href="#img2"><img src="img/oferta02.webp" alt="Oferta 2"></a></li>
+           <li><a href="#img3"><img src="img/oferta03.png" alt="Oferta 3"></a></li>
+        </ul>
+    </div>
+    <div class="modal" id="img1">
+        <h2>Pintura triple accion</h2>
+        <div class="foto1">
+            <a href="#img3"><</a>
+            <a href=""><img src="img/oferta01.jpg" alt="Pintura"></a>
+            <a href="#img2">></a>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis laboriosam rerum illo molestiae earum labore. Nesciunt sapiente a hic optio magnam cumque dolores ipsa velit vitae iure corporis, sed perferendis enim nihil autem harum reprehenderit deserunt quis quod excepturi nisi. Magnam incidunt necessitatibus ea voluptate perferendis. Enim reiciendis voluptatum quaerat optio magni totam non est iste laboriosam dolor illum architecto officia ut provident sit, aliquam nesciunt quibusdam adipisci ducimus iure debitis velit itaque nihil hic! Quia aspernatur ducimus at ipsum exercitationem deserunt cumque in nam doloribus, impedit sed suscipit harum iste quisquam deleniti minima blanditiis sunt vitae ex, non fugiat. ipsum dolor sit amet consectetur adipisicing elit. Atque ut molestias, veritatis a tempore dignissimos maxime et nisi natus fugit odit veniam labore ad nesciunt error quod velit! Odit, delectus!</p>
-        <h2>Novedades</h2>
-        <div class="contenido">
-            <img src="img/dewalt.jpg" width="150" height="150" alt="Novedades">
-            <img src="img/blackdecker.jpg" alt="Novedades">
+        <a class="cerrar" href="">X</a>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
+    </div>
+    <div class="modal" id="img2">
+        <h2>Caja de herramientas</h2>
+        <div class="foto1">
+            <a href="#img1"><</a>
+            <a href=""><img src="img/oferta02.webp" alt="Caja de herramientas"></a>
+            <a href="#img3">></a>
         </div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil quos ratione est doloribus eos, facere error porro itaque unde animi nemo dolorem quae esse nobis voluptatum quis qui, aspernatur deserunt incidunt, ut ea beatae quibusdam maiores temporibus. Voluptatibus et soluta cupiditate accusamus harum illo inventore impedit minima commodi quis, voluptatum excepturi nam officia quibusdam perspiciatis consequuntur ea repudiandae laboriosam consequatur rerum nesciunt ipsum modi! Saepe mollitia labore quo quidem necessitatibus magni in delectus repellendus modi nobis, quos dolore perspiciatis quaerat repellat sit, voluptatibus nostrum est molestias quas, ullam sed excepturi aperiam nam? Magni, id! Quae debitis cupiditate fugit suscipit nesciunt?</p>
-        <h2>Destacado</h2>
-        <div class="contenido">
-            <img src="img/guante.png" width="150" height="150" alt="guantes">
-            <img src="img/aerosol.png" alt="aerosol">
+        <a class="cerrar" href="">X</a>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
+    </div>
+    <div class="modal" id="img3">
+        <h2>Mascara de soldar</h2>
+        <div class="foto1">
+            <a href="#img2"><</a>
+            <a href=""><img src="img/oferta03.png" alt="Mascara de soldar"></a>
+            <a href="#img1">></a>
         </div>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis voluptatum quae earum sapiente harum consequatur ratione illum quidem! Ea nisi, ullam minus, sapiente sit quisquam, neque aliquid dolore at minima quaerat omnis quo. Praesentium, ipsam necessitatibus sit magnam quam nulla dignissimos consequuntur itaque molestiae perspiciatis iste. Autem, quibusdam sint? Deserunt sunt dignissimos reprehenderit minima possimus iusto voluptas saepe voluptatibus tempore aut animi id doloribus voluptate maxime, optio iste, mollitia alias sint perferendis atque pariatur. Quasi aperiam blanditiis exercitationem, explicabo debitis rerum fugit sequi praesentium incidunt illum tempora adipisci qui dolor eos sapiente labore architecto et doloribus ratione, iste est nisi.</p>
+        <a class="cerrar" href="">X</a>
+        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
+    </div>
+    <section class="mt-5">
+        <div class="fondoIndex">
+            <h2>Destacado</h2>
+            <ul class="galeria">
+               <li><a href="#img4"><img src="img/destacado01.jpg" alt="Destacado 1"></a></li>
+               <li><a href="#img5"><img src="img/destacado02.jpg" alt="Destacado 2"></a></li>
+               <li><a href="#img6"><img src="img/destacado03.jpg" alt="Destacado 3"></a></li>
+               <li><a href="#img7"><img src="img/destacado04.jpg" alt="Destacado 4"></a></li>
+            </ul>
+        </div>
+        <div class="modal" id="img4">
+            <h2>Hidrolavadora</h2>
+            <div class="foto1">
+                <a href="#img7"><</a>
+                <a href=""><img src="img/destacado01.jpg" alt="Destacado 1"></a>
+                <a href="#img5">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
+        </div>
+        <div class="modal" id="img5">
+            <h2>Bordeadora</h2>
+            <div class="foto1">
+                <a href="#img4"><</a>
+                <a href=""><img src="img/destacado02.jpg" alt="Destacado 2"></a>
+                <a href="#img6">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
+        </div>
+        <div class="modal" id="img6">
+            <h2>Destornillador electrico</h2>
+            <div class="foto1">
+                <a href="#img5"><</a>
+                <a href=""><img src="img/destacado03.jpg" alt="Destacado 3"></a>
+                <a href="#img7">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
+        </div>
+        <div class="modal" id="img7">
+            <h2>Sellador poliuretano</h2>
+            <div class="foto1">
+                <a href="#img6"><</a>
+                <a href=""><img src="img/destacado04.jpg" alt="taladro"></a>
+                <a href="#img4">></a>
+            </div>
+            <a class="cerrar" href="">X</a>
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
+        </div>
     </section>
-    <section>
+    <section class="mt-5">
         <nav class="miCuenta">
             <ul>
                 <li><a href="pages/micuenta.html">Mi cuenta</a></li>
@@ -77,16 +187,9 @@
                     <li><a href="https://www.facebook.com"  target="_blank"><img src="img/facebook.png" width="50" height="50"alt="Facebook"></a></li>
                     <li><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.jpg" width="50" height="50"alt="Instagram"></a></li>
                 </ul>
-                <form>
-                    <label for="newsletter">Newsletter</label>
-                    <input id="newsletter" type="email">
-                    <br><br>
-                    <input type="submit">
-                </form>
             </div>
         </nav>
     </section>
-    <hr>
     <footer class="footer">
         <strong> © 2022 FerreteriaPopular</strong>
         <p>Diseño y programacion: Mauro Riveros Naveda</p>
@@ -95,5 +198,7 @@
     <script>
         AOS.init();
       </script>
+      <!-- JavaScript Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
