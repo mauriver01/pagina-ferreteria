@@ -15,12 +15,12 @@
     <header>
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="img/ferreteria-1.png" alt=""></a>
+              <a class="navbar-brand" href="#"><img class="logoFerreteria" data-aos="flip-right" src="img/ferreteria-1.png" alt="Logo ferreteria"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
                     <a class="nav-link" href="pages/nuestraempresa.html">Nuestra Empresa</a>
                   </li>
@@ -47,84 +47,62 @@
                 </li>
             </ul>
         </div>
-        <div class="navBar">
-            <nav class="navbar navbar-expand-lg bg-light">
-                <div class="container-fluid">
-                  <a class="navbar-brand" href="#"></a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <section class="mb-5">
+          <div class="navBar">
+            <nav class="navbar navbar-expand-lg ">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Categorias
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pages/construccion.html">Construccion</a></li>
+                        <li><a class="dropdown-item" href="pages/electricidad.html">Electricidad</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="pages/pinturas.html">Pinturas</a></li>
+                        <li><a class="dropdown-item" href="pages/jardineria.html">Jardineria</a></li>
+                      </ul>
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link" href="pages/alquileres.html">Alquileres</a>
                       </li>
-                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Categorias
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="pages/construccion.html">Construccion</a></li>
-                          <li><a class="dropdown-item" href="pages/electricidad.html">Electricidad</a></li>
-                          <li><hr class="dropdown-divider"></li>
-                          <li><a class="dropdown-item" href="pages/jardineria.html">Jardineria</a></li>
-                          <li><a class="dropdown-item" href="pages/pinturas.html">Pinturas</a></li>
-                        </ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="pages/alquileres.html">Alquileres</a>
-                          </li>
-                      </li>
-                    </ul>
-                    <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                  </div>
+                    </li>
+                  </ul>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                  </form>
                 </div>
+              </div>
+            </nav>
+          </div>
+        </section>
               </nav>
         </div>
     </main>
     <!-- las imagenes de section no son las definitivas -->
-    <div class="fondoIndex">
-        <h2>Ofertas de la semana</h2>
-        <ul class="galeria">
-           <li><a href="#img1"><img src="img/oferta01.jpg" alt="Oferta 1"></a></li>
-           <li><a href="#img2"><img src="img/oferta02.webp" alt="Oferta 2"></a></li>
-           <li><a href="#img3"><img src="img/oferta03.png" alt="Oferta 3"></a></li>
-        </ul>
-    </div>
-    <div class="modal" id="img1">
-        <h2>Pintura triple accion</h2>
-        <div class="foto1">
-            <a href="#img3"><</a>
-            <a href=""><img src="img/oferta01.jpg" alt="Pintura"></a>
-            <a href="#img2">></a>
+    <div class="fondoIndex" data-aos="fade-up">
+        <h2>Oferta de la semana</h2>
+        <div class="px-4 py-5 my-5 text-center">
+          <img class="d-block mx-auto mb-4" src="img/oferta01.jpg" alt="" width="300" height="300">
+          <h1 class="display-5 fw-bold">Pintura triple acción</h1>
+          <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ratione eligendi ducimus deserunt architecto, quasi aliquid. Natus sint vitae officiis esse, ex doloremque illum earum voluptate facere, delectus officia a.</p>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+              <button type="button" class="btn botones btn-lg px-4 gap-3">Comprar</button>
+              <button type="button" class="btn botones btn-lg px-4">Ver otros productos</button>
+            </div>
+          </div>
         </div>
-        <a class="cerrar" href="">X</a>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
-    </div>
-    <div class="modal" id="img2">
-        <h2>Caja de herramientas</h2>
-        <div class="foto1">
-            <a href="#img1"><</a>
-            <a href=""><img src="img/oferta02.webp" alt="Caja de herramientas"></a>
-            <a href="#img3">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
-    </div>
-    <div class="modal" id="img3">
-        <h2>Mascara de soldar</h2>
-        <div class="foto1">
-            <a href="#img2"><</a>
-            <a href=""><img src="img/oferta03.png" alt="Mascara de soldar"></a>
-            <a href="#img1">></a>
-        </div>
-        <a class="cerrar" href="">X</a>
-        <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
-    </div>
     <section class="mt-5">
-        <div class="fondoIndex">
+        <div class="fondoIndex" data-aos="fade-up">
             <h2>Destacado</h2>
             <ul class="galeria">
                <li><a href="#img4"><img src="img/destacado01.jpg" alt="Destacado 1"></a></li>
@@ -174,20 +152,13 @@
             <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, corrupti accusantium omnis unde voluptatum ex enim perferendis id dolorum modi distinctio optio mollitia explicabo ullam minus nemo suscipit, eius quas!</p>
         </div>
     </section>
-    <section class="mt-5">
+    <section>
         <nav class="miCuenta">
             <ul>
                 <li><a href="pages/micuenta.html">Mi cuenta</a></li>
                 <li><a href="pages/carritodecompras.html">Carrito de compras</a></li>
                 <li><a href="pages/favoritos.html">Favoritos</a></li>
             </ul>
-            <h2>Seguinos</h2>
-            <div class="redesForm">
-                <ul>
-                    <li><a href="https://www.facebook.com"  target="_blank"><img src="img/facebook.png" width="50" height="50"alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com" target="_blank"><img src="img/instagram.jpg" width="50" height="50"alt="Instagram"></a></li>
-                </ul>
-            </div>
         </nav>
     </section>
     <footer class="footer">

@@ -25,7 +25,6 @@ header ul li {
     font-weight: bold;
     font-size: 15px;
     border-radius: 3px;
-    transition: all 2s;
 }
 
 header ul li:hover {
@@ -41,7 +40,9 @@ li {
     margin-left: 30px;
 }
 
-
+.navBar {
+    background-color: #e5e5e5;
+}
 .navBar nav {
     font-size: 25px;
 }
@@ -53,11 +54,16 @@ li {
 
 .navBar ul li {
     border-radius: 5px;
-    transition: all 2s;
 }
 .navBar ul li:hover {
     background-color:#8cd16d
 }
+
+.navbar-toggler-icon {
+    background-color:#e5e5e5;
+    border-radius: 3px;
+}
+
 
 a {
     text-decoration: none;
@@ -116,30 +122,16 @@ h2 {
 @keyframes cambio {
     0%{margin-left: 0;}
     50%{margin-left: -100%;}
-    100%{margin-left: -200%;}
-   
+    100%{margin-left: -200%;}   
 }
 
-
-
-
-.contenido {
-    display: inline-block;
-    background-image: url(../img/fondo-metal.jpg);
-    width: 100%;
+.botones {
+    background-color: #8cd16d;
 }
-
-.contenido img {
-    height: 150px;
-    width: 300px;
-    margin: 30px;
-}
-
-
 .miCuenta {
     color: darkblue;
     background-color: #e5e5e5;
-    font-size: 30px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -147,24 +139,6 @@ h2 {
     margin: 15px;
 }
 
-.redesForm {
-    display: inline-flex
-}
-
-.redesForm ul {
-    margin-right: 200px;
-    margin-bottom: 30px;
-}
-
-.redesForm form {
-    background-color: #444;
-    color: aliceblue;
-    font-size: 20px;
-    border-radius: 10px;
-    padding: 10px;
-    margin-left: 200px;
-    margin-bottom: 30px;
-}
 .footer {
     background-color: black;
     color: bisque;
@@ -322,6 +296,38 @@ h2 {
     margin-bottom: 30px;
     margin: 15px 300px;
     border-radius: 10px; 
+    
+}
+
+/* vista celu index */
+
+@media (max-width:768px) {
+    .marcas {
+        display: none;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .logoFerreteria {
+        height: 100px;
+        width: 100px;
+    }
+
+
+    .miCuenta {
+        font-size: 15px;
+    }
+} 
+
+/* vista celu alquileres */
+@media (max-width:768px) {
+    .logoFerreteria {
+        height: 100px;
+        width: 100px;
+    }
+
 }
 
 
