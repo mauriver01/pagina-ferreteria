@@ -1,0 +1,41 @@
+.form {
+    background-color: #444;
+    color: $color-principal;
+    margin: 15px 200px;
+    padding: 15px;
+    border-radius: 10px
+}
+
+.botonEnviar {
+    text-align: center;
+
+    button {
+        color: black;
+        background-color: $color-fondo-1;
+        transition: 2s;
+    }
+
+    button:hover {
+        background-color: $color-fondo-2;
+    }
+}
+
+
+.mapa {
+    text-align: center;
+    background-color: #444;
+    border: 5px solid black;
+    margin-bottom: 30px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+
+.redes {
+    text-align: center;
+    background-color: #444;
+    border: 5px solid black;
+    margin-bottom: 30px;
+    margin: 15px 300px;
+    border-radius: 10px;    
+}

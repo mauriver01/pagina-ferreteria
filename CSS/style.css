@@ -1,334 +1,241 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-}
+  margin: 0;
+  padding: 0; }
 
 body {
-    background-image: url(../img/fondo-1.png);
-    width: 100%;
-}
+  background-image: url(../img/fondo-1.png);
+  width: 100%; }
 
 header img {
-    width: 150px;
-    height: 150px;
-    margin: 30px;
-}
+  width: 150px;
+  height: 150px;
+  margin: 30px; }
 
 header nav {
-    background-image: url(../img/encabezado.png);
-}
+  background-image: url(../img/encabezado.png); }
 
 header ul li {
-    background-color:white;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 3px;
-}
+  background-color: white;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 3px; }
 
 header ul li:hover {
-    background-color: #8cd16d;
-}
-
-
+  background-color: #8cd16d; }
 
 li {
-    display: inline-block;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-}
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px; }
 
-.navBar {
-    background-color: #e5e5e5;
-}
-.navBar nav {
-    font-size: 25px;
-}
-
-.navBar img {
-    width: 50px;
-    height: 50px;
-}
-
-.navBar ul li {
-    border-radius: 5px;
-}
-.navBar ul li:hover {
-    background-color:#8cd16d
-}
-
-.navbar-toggler-icon {
-    background-color:#e5e5e5;
-    border-radius: 3px;
-}
-
-
-a {
-    text-decoration: none;
-    color: darkblue;
-    font-family: 'Lato', sans-serif;
-}
-
-
-section p {
-    color: black;
-    font-size: 20px;
-    margin: 50px;
-}
-
-h1 {
-    margin: 30px;
-    text-align: center;
-    color: darkblue;
-
-}
-h2 {
-    color: darkblue;
-    text-align: center;
-    margin: 30px;
-    font-size: 25px;
-}
-
-.fondoIndex {
-    background-color: #e5e5e5;
-    margin: 0%;
-    padding: 15px;
-
-}
 .marcas {
-    width: 100%;
-    height: 700px;
-    overflow: hidden;
-}
-
-.marcas ul {
+  width: 100%;
+  height: 700px;
+  overflow: hidden; }
+  .marcas ul {
     width: 300%;
     display: flex;
-    animation: cambio 30s infinite alternate linear
-}
-
-.marcas li {
+    animation: cambio 30s infinite alternate linear; }
+  .marcas li {
     width: 100%;
-    list-style: none;
-}
-
-.marcas img {
+    list-style: none; }
+  .marcas img {
     height: 700px;
-    width: 100%;
-}
+    width: 100%; }
 
 @keyframes cambio {
-    0%{margin-left: 0;}
-    50%{margin-left: -100%;}
-    100%{margin-left: -200%;}   
-}
+  0% {
+    margin-left: 0; }
+  50% {
+    margin-left: -100%; }
+  100% {
+    margin-left: -200%; } }
+
+.navBar {
+  background-color: #e5e5e5; }
+  .navBar nav {
+    font-size: 25px; }
+  .navBar img {
+    width: 50px;
+    height: 50px; }
+  .navBar ul li {
+    border-radius: 5px; }
+  .navBar ul li:hover {
+    background-color: #8cd16d; }
+
+.navbar-toggler-icon {
+  background-color: #e5e5e5;
+  border-radius: 3px; }
+
+a {
+  text-decoration: none;
+  color: darkblue;
+  font-family: 'Lato', sans-serif; }
+
+.form {
+  background-color: #444;
+  color: white;
+  margin: 15px 200px;
+  padding: 15px;
+  border-radius: 10px; }
+
+.botonEnviar {
+  text-align: center; }
+  .botonEnviar button {
+    color: black;
+    background-color: #e5e5e5;
+    transition: 2s; }
+  .botonEnviar button:hover {
+    background-color: #8cd16d; }
+
+.mapa {
+  text-align: center;
+  background-color: #444;
+  border: 5px solid black;
+  margin-bottom: 30px;
+  margin: 15px;
+  border-radius: 10px; }
+
+.redes {
+  text-align: center;
+  background-color: #444;
+  border: 5px solid black;
+  margin-bottom: 30px;
+  margin: 15px 300px;
+  border-radius: 10px; }
+
+h1 {
+  margin: 30px;
+  text-align: center;
+  color: darkblue; }
+
+h2 {
+  color: darkblue;
+  text-align: center;
+  margin: 30px;
+  font-size: 25px; }
+
+section p {
+  color: black;
+  font-size: 20px;
+  margin: 50px; }
 
 .botones {
-    background-color: #8cd16d;
-}
-.miCuenta {
-    color: darkblue;
-    background-color: #e5e5e5;
-    font-size: 25px;
-    text-align: center;
-}
+  background-color: #8cd16d; }
 
-.miCuenta li{
-    margin: 15px;
-}
-
-.footer {
-    background-color: black;
-    color: bisque;
-    padding-bottom: 30px;
-    padding-top: 30px
-    
-}
-
-.video {
-    text-align: center;
-    margin: 30px;
-}
-
+.fondoIndex {
+  background-color: #e5e5e5;
+  margin: 0%;
+  padding: 15px; }
 
 .fondo {
-    background: #444;
-    margin: 0%;
-    padding: 15px;
-    font-family: 'Lato', sans-serif; 
-}
-
-.fondo h1 {
+  background: #444;
+  margin: 0%;
+  padding: 15px;
+  font-family: 'Lato', sans-serif; }
+  .fondo h1 {
     color: white;
-    text-align: center;
-}
+    text-align: center; }
 
 .galeria {
-    width: 90%;
-    border: 7px solid white;
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.galeria li {
-    margin: 5px;
-}
-
-.galeria img {
+  width: 90%;
+  border: 7px solid white;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
+  .galeria li {
+    margin: 5px; }
+  .galeria img {
     width: 150px;
-    height: 100px;
-}
+    height: 100px; }
 
 .modal {
-    display: none;
-}
-
-.modal:target {
+  display: none; }
+  .modal:target {
     display: block;
     position: fixed;
     background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-}
-
-.modal h2 {
+    height: 100%; }
+  .modal h2 {
     color: white;
     font-size: 30px;
     text-align: center;
-    margin: 15px 0;
-}
+    margin: 15px 0; }
+  .modal p {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 10px; }
 
 .foto1 {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.foto1 a {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .foto1 a {
     color: white;
     font-size: 40px;
-    margin: 0 10px;
-}
-
-.foto1 a:nth-child(2) {
+    margin: 0 10px; }
+  .foto1 a:nth-child(2) {
     margin: 0;
-    height: 100%;
-}
-
-.foto1 img {
+    height: 100%; }
+  .foto1 img {
     width: 500px;
     height: 100%;
     max-width: 100%;
     border: 7px solid black;
-    box-sizing: border-box;
-}
+    box-sizing: border-box; }
 
 .cerrar {
-    display: block;
-    background: white;
-    width: 25px;
-    height: 25px;
-    margin: 15px auto;
-    text-align: center;
-    font-size: 25px;
-    color: black;
-    padding: 5px;
-    border-radius: 50%;
-    line-height: 25px;
+  display: block;
+  background: white;
+  width: 25px;
+  height: 25px;
+  margin: 15px auto;
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  padding: 5px;
+  border-radius: 50%;
+  line-height: 25px; }
 
-}
+.miCuenta {
+  color: darkblue;
+  background-color: #e5e5e5;
+  font-size: 25px;
+  text-align: center; }
+  .miCuenta li {
+    margin: 15px; }
 
-.modal p {
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    margin: 10px;
-}
-
-.form {
-    background-color: #444;
-    color: white;
-    margin: 15px 200px;
-    padding: 15px;
-    border-radius: 10px
-}
-
-.botonEnviar {
-    text-align: center;
-}
-
-.botonEnviar button {
-    color: black;
-    background-color: #e5e5e5;
-    transition: 2s;
-}
-
-.botonEnviar button:hover {
-    background-color: #8cd16d;
-}
-
-
-
-.mapa {
-    text-align: center;
-    background-color: #444;
-    border: 5px solid black;
-    margin-bottom: 30px;
-    margin: 15px;
-    border-radius: 10px;
-}
-
-
-.redes {
-    text-align: center;
-    background-color: #444;
-    border: 5px solid black;
-    margin-bottom: 30px;
-    margin: 15px 300px;
-    border-radius: 10px; 
-    
-}
+.footer {
+  background-color: black;
+  color: bisque;
+  padding-bottom: 30px;
+  padding-top: 30px; }
 
 /* vista celu index */
-
-@media (max-width:768px) {
-    .marcas {
-        display: none;
-    }
-
-    h1 {
-        display: none;
-    }
-
-    .logoFerreteria {
-        height: 100px;
-        width: 100px;
-    }
-
-
-    .miCuenta {
-        font-size: 15px;
-    }
-} 
+@media (max-width: 768px) {
+  .marcas {
+    display: none; }
+  h1 {
+    display: none; }
+  .logoFerreteria {
+    height: 100px;
+    width: 100px; }
+  .miCuenta {
+    font-size: 15px; } }
 
 /* vista celu alquileres */
-@media (max-width:768px) {
-    .logoFerreteria {
-        height: 100px;
-        width: 100px;
-    }
-
-}
-
-
-
+@media (max-width: 768px) {
+  .logoFerreteria {
+    height: 100px;
+    width: 100px; } }
