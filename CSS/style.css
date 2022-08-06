@@ -13,16 +13,14 @@ header img {
   margin: 30px; }
 
 header nav {
-  background-image: url(../img/encabezado.png); }
+  background-image: url(../img/encabezado.png);
+  width: 100%; }
 
-header ul li {
-  background-color: white;
-  font-weight: bold;
-  font-size: 15px;
-  border-radius: 3px; }
-
-header ul li:hover {
-  background-color: #8cd16d; }
+.menuHeader {
+  border-radius: 3px;
+  background-color: white; }
+  .menuHeader:hover {
+    background-color: #8cd16d; }
 
 li {
   display: inline-block;
@@ -62,10 +60,24 @@ li {
     height: 50px; }
   .navBar ul li {
     border-radius: 5px; }
-  .navBar ul li:hover {
-    background-color: #8cd16d; }
+    .navBar ul li:hover {
+      background-color: #8cd16d; }
+  .navBar .dropdown-menu {
+    background-color: #e5e5e5; }
+  .navBar .dropdown-item {
+    background-color: #e5e5e5; }
+    .navBar .dropdown-item:hover {
+      background-color: #8cd16d; }
+  .navBar .btn {
+    text-transform: uppercase;
+    color: #8cd16d;
+    border: solid 2px;
+    background-color: #e5e5e5; }
+    .navBar .btn:hover {
+      color: #e5e5e5;
+      background-color: #8cd16d; }
 
-.navbar-toggler-icon {
+.navbar-toggler {
   background-color: #e5e5e5;
   border-radius: 3px; }
 
@@ -123,7 +135,10 @@ section p {
   margin: 50px; }
 
 .botones {
-  background-color: #8cd16d; }
+  background-color: white; }
+  .botones:hover {
+    color: #e5e5e5;
+    background-color: #8cd16d; }
 
 .fondoIndex {
   background-color: #e5e5e5;

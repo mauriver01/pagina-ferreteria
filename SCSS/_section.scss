@@ -5,7 +5,12 @@ section p {
 }
 
 .botones {
-    background-color: $color-fondo-2;
+    background-color: $color-principal;
+
+    &:hover {
+        color: $color-fondo-1;
+        background-color: $color-fondo-2;
+    }
 }
 
 .fondoIndex {

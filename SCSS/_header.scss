@@ -7,16 +7,15 @@ header {
 
     nav {
         background-image: url(../img/encabezado.png);
+        width: 100%;
     }
+}
 
-    ul li {
-        background-color:$color-principal;
-        font-weight: bold;
-        font-size: 15px;
-        border-radius: 3px;
-    }
 
-    ul li:hover {
+.menuHeader {    
+    border-radius: 3px;
+    background-color: $color-principal;
+    &:hover {
         background-color: $color-fondo-2;
     }
 }

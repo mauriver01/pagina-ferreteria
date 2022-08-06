@@ -38,19 +38,44 @@
         height: 50px;
     }
 
-    ul li {
-        border-radius: 5px;
+    ul {
+        li {
+            border-radius: 5px;
+            &:hover {
+                background-color:$color-fondo-2
+            }
+        }
+    } 
+
+    .dropdown-menu {
+        background-color: $color-fondo-1;
     }
 
-    ul li:hover {
-        background-color:$color-fondo-2
+    .dropdown-item {
+        background-color: $color-fondo-1;
+        &:hover {
+            background-color: $color-fondo-2;
+        }
+    }
+
+    .btn {
+        text-transform: uppercase;
+        color: $color-fondo-2;
+        border: solid 2px;
+        background-color: $color-fondo-1;
+
+        &:hover {
+            color: $color-fondo-1;
+            background-color: $color-fondo-2
+        }
     }
 }
 
-.navbar-toggler-icon {
+.navbar-toggler {
     background-color: $color-fondo-1;
     border-radius: 3px;
 }
+
 
 a {
     text-decoration: none;
