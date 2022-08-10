@@ -63,20 +63,21 @@ section p {
         height: 100%;
     }
 
-    h2 {
+    /* h2 {
         color: $color-principal;
         font-size: 30px;
         text-align: center;
         margin: 15px 0;
-    }
+    } */
 
-    p {
+    /* p {
         font-size: 25px;
         color: $color-principal;
         text-align: center;
         margin: 10px;
-    }
+    } */
 }
+
 
 .foto1 {
     width: 100%;
@@ -128,4 +129,25 @@ section p {
     li{
         margin: 15px;
     }
+}
+
+.nuestrasRedes {
+    text-align: center;
+    margin: 30px;
+}
+
+
+.facebook {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.instagram {
+    font-size: 30px;
+    margin: 30px;
+}
+
+.whatsapp {
+    font-size: 30px;
+    margin: 30px;
 }

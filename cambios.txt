@@ -1,0 +1,11 @@
+CAMBIOS REALIZADOS PARA LA ENTREGA DE SASS 2 + SEO:
+SASS 2: 
+cree un mapa dándole color a los enlaces de facebook, instagram y whatsapp (solo utilizaré esta idea para el desafio y la idea original esta comentada en la seccion contacto )
+cree un map-get con una variable de color y una de tamaño de fuente para en navBar
+cree un extend para los h1 y agregue un font-size para el h2 
+cree un mixin para la clase parrafo que se puede ver en los <p> de la seccion destacado en el index 
+
+SEO:
+Modifique los titulos de todas las paginas
+Agregué la etiqueta meta con la descripcion en todas las paginas
+Tengo un H1 por pagina 

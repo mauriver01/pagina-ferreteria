@@ -1,0 +1,12 @@
+/* mixin con parametros */
+
+@mixin parrafoConParametros ($size, $color, $alineacion, $margen) {
+    font-size: $size;
+    color: $color;
+    text-align: $alineacion;
+    margin: $margen;
+}
+
+.parrafo {
+    @include parrafoConParametros(25px, white , center , 10px );
+}

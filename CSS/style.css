@@ -17,6 +17,7 @@ header nav {
   width: 100%; }
 
 .menuHeader {
+  font-size: 16px;
   border-radius: 3px;
   background-color: white; }
   .menuHeader:hover {
@@ -52,9 +53,11 @@ li {
     margin-left: -200%; } }
 
 .navBar {
-  background-color: #e5e5e5; }
-  .navBar nav {
-    font-size: 25px; }
+  /* background-color: $color-fondo-1;
+
+    nav {
+        font-size: 25px;
+    } */ }
   .navBar img {
     width: 50px;
     height: 50px; }
@@ -86,6 +89,9 @@ a {
   color: darkblue;
   font-family: 'Lato', sans-serif; }
 
+* {
+  font-family: "Poppins", sans-serif; }
+
 .form {
   background-color: #444;
   color: white;
@@ -103,32 +109,60 @@ a {
     background-color: #8cd16d; }
 
 .mapa {
-  text-align: center;
-  background-color: #444;
-  border: 5px solid black;
-  margin-bottom: 30px;
-  margin: 15px;
-  border-radius: 10px; }
+  text-align: center; }
 
 .redes {
-  text-align: center;
-  background-color: #444;
-  border: 5px solid black;
-  margin-bottom: 30px;
-  margin: 15px 300px;
-  border-radius: 10px; }
+  position: fixed;
+  top: 50%;
+  /* bottom: 15px; */
+  left: 10px; }
 
-h1 {
-  margin: 30px;
-  text-align: center;
-  color: darkblue; }
+.redesBoton {
+  width: 55px;
+  height: 55px;
+  display: block;
+  box-shadow: 0 3px 6px black;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  color: #222;
+  transition: all 0.3s ease;
+  margin-bottom: 15px; }
+  .redesBoton:hover {
+    width: 100%;
+    padding: 10px; }
+    .redesBoton:hover:nth-child(1):hover {
+      color: #4267b2; }
+    .redesBoton:hover:nth-child(2):hover {
+      color: #e1306c; }
+    .redesBoton:hover:nth-child(3):hover {
+      color: #25d366; }
+
+.facebook {
+  color: black; }
+
+.redesBoton p {
+  display: none; }
+
+.redesBoton:hover > p {
+  display: block; }
+
+/* h1 {
+    margin: 30px;
+    text-align: center;
+    color: $color-titulos;
+}
 
 h2 {
-  color: darkblue;
-  text-align: center;
-  margin: 30px;
-  font-size: 25px; }
-
+    color: $color-titulos;
+    text-align: center;
+    margin: 30px;
+    font-size: 25px;
+} */
 section p {
   color: black;
   font-size: 20px;
@@ -149,7 +183,7 @@ section p {
   margin: 0%;
   padding: 15px;
   font-family: 'Lato', sans-serif; }
-  .fondo h1 {
+  .fondo h1, .fondo h2 {
     color: white;
     text-align: center; }
 
@@ -169,7 +203,19 @@ section p {
     height: 100px; }
 
 .modal {
-  display: none; }
+  display: none;
+  /* h2 {
+        color: $color-principal;
+        font-size: 30px;
+        text-align: center;
+        margin: 15px 0;
+    } */
+  /* p {
+        font-size: 25px;
+        color: $color-principal;
+        text-align: center;
+        margin: 10px;
+    } */ }
   .modal:target {
     display: block;
     position: fixed;
@@ -178,16 +224,6 @@ section p {
     left: 0;
     width: 100%;
     height: 100%; }
-  .modal h2 {
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    margin: 15px 0; }
-  .modal p {
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    margin: 10px; }
 
 .foto1 {
   width: 100%;
@@ -230,6 +266,22 @@ section p {
   .miCuenta li {
     margin: 15px; }
 
+.nuestrasRedes {
+  text-align: center;
+  margin: 30px; }
+
+.facebook {
+  font-size: 30px;
+  margin: 30px; }
+
+.instagram {
+  font-size: 30px;
+  margin: 30px; }
+
+.whatsapp {
+  font-size: 30px;
+  margin: 30px; }
+
 .footer {
   background-color: black;
   color: bisque;
@@ -240,7 +292,7 @@ section p {
 @media (max-width: 768px) {
   .marcas {
     display: none; }
-  h1 {
+  h1, h2 {
     display: none; }
   .logoFerreteria {
     height: 100px;
@@ -253,3 +305,34 @@ section p {
   .logoFerreteria {
     height: 100px;
     width: 100px; } }
+
+/* maps */
+.facebook {
+  color: #4267b2; }
+
+.instagram {
+  color: #e1306c; }
+
+.whatsapp {
+  color: #25d366; }
+
+/* map-get */
+.navbar {
+  background-color: #e5e5e5;
+  font-size: 25px; }
+
+/* extend */
+h1, h2 {
+  margin: 30px;
+  text-align: center;
+  color: darkblue; }
+
+h2 {
+  font-size: 25px; }
+
+/* mixin con parametros */
+.parrafo {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin: 10px; }

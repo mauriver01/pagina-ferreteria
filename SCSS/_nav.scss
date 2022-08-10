@@ -1,3 +1,7 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+
 .form {
     background-color: #444;
     color: $color-principal;
@@ -23,19 +27,67 @@
 
 .mapa {
     text-align: center;
-    background-color: #444;
-    border: 5px solid black;
-    margin-bottom: 30px;
-    margin: 15px;
-    border-radius: 10px;
 }
 
 
 .redes {
-    text-align: center;
-    background-color: #444;
-    border: 5px solid black;
-    margin-bottom: 30px;
-    margin: 15px 300px;
-    border-radius: 10px;    
-}
+    position: fixed;
+    top: 50%;
+    /* bottom: 15px; */
+    left: 10px;
+  }
+  
+  .redesBoton {
+    width: 55px;
+    height: 55px;
+    display: block;
+    box-shadow: 0 3px 6px rgb(0, 0, 0.2);
+    border-radius: 10px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #222;
+  
+    transition: all 0.3s ease;
+    margin-bottom: 15px;
+
+    &:hover {
+        width: 100%;
+        padding: 10px;
+    
+        &:nth-child(1):hover {
+            color: #4267b2;
+          }
+    
+        &:nth-child(2):hover {
+            color: #e1306c;
+          }
+    
+        &:nth-child(3):hover {
+            color: #25d366;
+          }
+      }
+  }
+
+  .facebook {
+    color: black;
+  }
+
+  .redesBoton p {
+    display: none;
+  }
+  
+  .redesBoton:hover > p {
+    display: block;
+  }
+
+  
+  
+  
+
+  
+  
