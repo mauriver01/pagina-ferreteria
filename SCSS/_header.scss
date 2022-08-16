@@ -1,24 +1,52 @@
-header {
-    img {
-        width: 150px;
-        height: 150px;
-        margin: 30px;
-    }
+.navBar {
+    background: linear-gradient($color-fondo-2, $color-principal);
 
     nav {
-        background-image: url(../img/encabezado.png);
-        width: 100%;
+        font-size: 17px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    ul {
+        li {
+            border-radius: 5px;
+            &:hover {
+                background-color:$color-fondo-1
+            }
+        }
+    } 
+
+    .dropdown-menu {
+        background-color: $color-fondo-1;
+        font-size: 1rem;
+    }
+
+    .dropdown-item {
+        background-color: $color-fondo-1;
+        &:hover {
+            background-color: $color-fondo-2;
+        }
+    }
+
+    .btn {
+        text-transform: uppercase;
+        color: $color-fondo-2;
+        border: solid 2px;
+        background-color: $color-fondo-1;
+
+        &:hover {
+            color: $color-fondo-1;
+            background-color: $color-fondo-2
+        }
     }
 }
 
-
-.menuHeader {
-    font-size: 16px;    
+.navbar-toggler {
+    background-color: $color-fondo-1;
     border-radius: 3px;
-    background-color: $color-principal;
-    &:hover {
-        background-color: $color-fondo-2;
-    }
 }
 
 li {

@@ -4,69 +4,22 @@
   padding: 0; }
 
 body {
-  background-image: url(../img/fondo-1.png);
   width: 100%; }
-
-header img {
-  width: 150px;
-  height: 150px;
-  margin: 30px; }
-
-header nav {
-  background-image: url(../img/encabezado.png);
-  width: 100%; }
-
-.menuHeader {
-  font-size: 16px;
-  border-radius: 3px;
-  background-color: white; }
-  .menuHeader:hover {
-    background-color: #8cd16d; }
-
-li {
-  display: inline-block;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 30px; }
-
-.marcas {
-  width: 100%;
-  height: 700px;
-  overflow: hidden; }
-  .marcas ul {
-    width: 300%;
-    display: flex;
-    animation: cambio 30s infinite alternate linear; }
-  .marcas li {
-    width: 100%;
-    list-style: none; }
-  .marcas img {
-    height: 700px;
-    width: 100%; }
-
-@keyframes cambio {
-  0% {
-    margin-left: 0; }
-  50% {
-    margin-left: -100%; }
-  100% {
-    margin-left: -200%; } }
 
 .navBar {
-  /* background-color: $color-fondo-1;
-
-    nav {
-        font-size: 25px;
-    } */ }
+  background: linear-gradient(#8cd16d, white); }
+  .navBar nav {
+    font-size: 17px; }
   .navBar img {
-    width: 50px;
-    height: 50px; }
+    width: 100px;
+    height: 100px; }
   .navBar ul li {
     border-radius: 5px; }
     .navBar ul li:hover {
-      background-color: #8cd16d; }
+      background-color: #e5e5e5; }
   .navBar .dropdown-menu {
-    background-color: #e5e5e5; }
+    background-color: #e5e5e5;
+    font-size: 1rem; }
   .navBar .dropdown-item {
     background-color: #e5e5e5; }
     .navBar .dropdown-item:hover {
@@ -84,10 +37,27 @@ li {
   background-color: #e5e5e5;
   border-radius: 3px; }
 
+li {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px; }
+
 a {
   text-decoration: none;
   color: darkblue;
   font-family: 'Lato', sans-serif; }
+
+.botonCarrusel {
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px; }
+  .botonCarrusel:hover {
+    background-color: #e5e5e5; }
+
+.buscarCategorias img {
+  width: 100px;
+  height: 200px; }
 
 * {
   font-family: "Poppins", sans-serif; }
@@ -113,7 +83,7 @@ a {
 
 .redes {
   position: fixed;
-  top: 50%;
+  top: 40%;
   /* bottom: 15px; */
   left: 10px; }
 
@@ -151,18 +121,15 @@ a {
 .redesBoton:hover > p {
   display: block; }
 
-/* h1 {
-    margin: 30px;
-    text-align: center;
-    color: $color-titulos;
-}
+h1 {
+  margin: 30px;
+  text-align: center; }
 
 h2 {
-    color: $color-titulos;
-    text-align: center;
-    margin: 30px;
-    font-size: 25px;
-} */
+  text-align: center;
+  margin: 30px;
+  font-size: 25px; }
+
 section p {
   color: black;
   font-size: 20px;
@@ -183,7 +150,7 @@ section p {
   margin: 0%;
   padding: 15px;
   font-family: 'Lato', sans-serif; }
-  .fondo h1, .fondo h2 {
+  .fondo h1 {
     color: white;
     text-align: center; }
 
@@ -203,19 +170,7 @@ section p {
     height: 100px; }
 
 .modal {
-  display: none;
-  /* h2 {
-        color: $color-principal;
-        font-size: 30px;
-        text-align: center;
-        margin: 15px 0;
-    } */
-  /* p {
-        font-size: 25px;
-        color: $color-principal;
-        text-align: center;
-        margin: 10px;
-    } */ }
+  display: none; }
   .modal:target {
     display: block;
     position: fixed;
@@ -224,6 +179,16 @@ section p {
     left: 0;
     width: 100%;
     height: 100%; }
+  .modal h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0; }
+  .modal p {
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    margin: 10px; }
 
 .foto1 {
   width: 100%;
@@ -266,21 +231,20 @@ section p {
   .miCuenta li {
     margin: 15px; }
 
-.nuestrasRedes {
-  text-align: center;
-  margin: 30px; }
+.buscarCategoria {
+  text-align: center; }
 
-.facebook {
-  font-size: 30px;
-  margin: 30px; }
+.indexElectricidad:hover {
+  opacity: 50%; }
 
-.instagram {
-  font-size: 30px;
-  margin: 30px; }
+.indexConstruccion:hover {
+  opacity: 50%; }
 
-.whatsapp {
-  font-size: 30px;
-  margin: 30px; }
+.indexJardineria:hover {
+  opacity: 50%; }
+
+.indexPinturas:hover {
+  opacity: 50%; }
 
 .footer {
   background-color: black;
@@ -292,7 +256,7 @@ section p {
 @media (max-width: 768px) {
   .marcas {
     display: none; }
-  h1, h2 {
+  h1 {
     display: none; }
   .logoFerreteria {
     height: 100px;
@@ -305,34 +269,3 @@ section p {
   .logoFerreteria {
     height: 100px;
     width: 100px; } }
-
-/* maps */
-.facebook {
-  color: #4267b2; }
-
-.instagram {
-  color: #e1306c; }
-
-.whatsapp {
-  color: #25d366; }
-
-/* map-get */
-.navbar {
-  background-color: #e5e5e5;
-  font-size: 25px; }
-
-/* extend */
-h1, h2 {
-  margin: 30px;
-  text-align: center;
-  color: darkblue; }
-
-h2 {
-  font-size: 25px; }
-
-/* mixin con parametros */
-.parrafo {
-  font-size: 25px;
-  color: white;
-  text-align: center;
-  margin: 10px; }

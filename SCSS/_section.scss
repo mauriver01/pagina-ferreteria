@@ -63,19 +63,19 @@ section p {
         height: 100%;
     }
 
-    /* h2 {
+    h2 {
         color: $color-principal;
         font-size: 30px;
         text-align: center;
         margin: 15px 0;
-    } */
+    }
 
-    /* p {
+    p {
         font-size: 25px;
         color: $color-principal;
         text-align: center;
         margin: 10px;
-    } */
+    }
 }
 
 
@@ -131,23 +131,22 @@ section p {
     }
 }
 
-.nuestrasRedes {
+.buscarCategoria {
     text-align: center;
-    margin: 30px;
 }
 
-
-.facebook {
-    font-size: 30px;
-    margin: 30px;
+.indexElectricidad:hover {
+    opacity: 50%;
 }
 
-.instagram {
-    font-size: 30px;
-    margin: 30px;
+.indexConstruccion:hover {
+    opacity: 50%;
 }
 
-.whatsapp {
-    font-size: 30px;
-    margin: 30px;
+.indexJardineria:hover {
+    opacity: 50%;
+}
+
+.indexPinturas:hover {
+    opacity: 50%;
 }
