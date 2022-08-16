@@ -223,14 +223,6 @@ section p {
   border-radius: 50%;
   line-height: 25px; }
 
-.miCuenta {
-  color: darkblue;
-  background-color: #e5e5e5;
-  font-size: 25px;
-  text-align: center; }
-  .miCuenta li {
-    margin: 15px; }
-
 .buscarCategoria {
   text-align: center; }
 
@@ -251,21 +243,3 @@ section p {
   color: bisque;
   padding-bottom: 30px;
   padding-top: 30px; }
-
-/* vista celu index */
-@media (max-width: 768px) {
-  .marcas {
-    display: none; }
-  h1 {
-    display: none; }
-  .logoFerreteria {
-    height: 100px;
-    width: 100px; }
-  .miCuenta {
-    font-size: 15px; } }
-
-/* vista celu alquileres */
-@media (max-width: 768px) {
-  .logoFerreteria {
-    height: 100px;
-    width: 100px; } }
