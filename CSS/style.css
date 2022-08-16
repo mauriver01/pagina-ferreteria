@@ -7,6 +7,8 @@ body {
   width: 100%; }
 
 .navBar {
+  position: sticky;
+  z-index: 2;
   background: linear-gradient(#8cd16d, white); }
   .navBar nav {
     font-size: 17px; }
@@ -243,3 +245,8 @@ section p {
   color: bisque;
   padding-bottom: 30px;
   padding-top: 30px; }
+
+/* vista celu index */
+@media (max-width: 768px) {
+  .carrusel {
+    display: none; } }

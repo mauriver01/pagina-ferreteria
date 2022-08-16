@@ -1,4 +1,6 @@
 .navBar {
+    position:sticky;
+    z-index: 2;
     background: linear-gradient($color-fondo-2, $color-principal);
 
     nav {
