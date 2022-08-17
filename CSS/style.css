@@ -147,8 +147,7 @@ section p {
     background-color: #8cd16d; }
 
 .fondoIndex {
-  background-color: #e5e5e5;
-  margin: 0%; }
+  background: linear-gradient(white, #e5e5e5); }
 
 .fondo {
   background: #444;
@@ -229,27 +228,75 @@ section p {
   line-height: 25px; }
 
 .buscarCategoria {
+  background: linear-gradient(#e5e5e5, white);
   text-align: center; }
 
-.indexElectricidad:hover {
-  opacity: 50%; }
+.indexElectricidad {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px; }
+  .indexElectricidad img {
+    width: 100%;
+    height: 100%; }
+  .indexElectricidad img:hover {
+    display: block;
+    opacity: 80%; }
+  .indexElectricidad h3 {
+    position: absolute;
+    color: white;
+    bottom: 0; }
 
-.indexConstruccion:hover {
-  opacity: 50%; }
+.indexConstruccion {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px; }
+  .indexConstruccion img {
+    width: 100%;
+    height: 100%; }
+  .indexConstruccion img:hover {
+    display: block;
+    opacity: 80%; }
+  .indexConstruccion h3 {
+    position: absolute;
+    color: white;
+    bottom: 0; }
 
-.indexJardineria:hover {
-  opacity: 50%; }
+.indexJardineria {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px; }
+  .indexJardineria img {
+    width: 100%;
+    height: 100%; }
+  .indexJardineria img:hover {
+    display: block;
+    opacity: 80%; }
+  .indexJardineria h3 {
+    position: absolute;
+    color: white;
+    bottom: 0; }
 
-.indexPinturas:hover {
-  opacity: 50%; }
+.indexPinturas {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 10px; }
+  .indexPinturas img {
+    width: 100%;
+    height: 100%; }
+  .indexPinturas img:hover {
+    display: block;
+    opacity: 80%; }
+  .indexPinturas h3 {
+    position: absolute;
+    color: white;
+    bottom: 0; }
 
 .footer {
   background-color: black;
   color: bisque;
   padding-bottom: 30px;
   padding-top: 30px; }
-
-/* vista celu index */
-@media (max-width: 768px) {
-  .carrusel {
-    display: none; } }
