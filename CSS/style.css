@@ -7,8 +7,6 @@ body {
   width: 100%; }
 
 .navBar {
-  position: sticky;
-  z-index: 2;
   background: linear-gradient(#8cd16d, white); }
   .navBar nav {
     font-size: 17px; }
@@ -64,6 +62,44 @@ a {
     color: white;
     bottom: 0; }
 
+.accordion-collapse {
+  background-color: #e5e5e5;
+  border-radius: 20px; }
+
+.accordion-button {
+  background-color: #8cd16d;
+  border-radius: 20px; }
+
+.presupuesto {
+  margin: 50px;
+  padding: 30px; }
+
+.botonContacto {
+  font-weight: bold;
+  padding: 10px;
+  color: black;
+  background-color: #8cd16d;
+  border-radius: 10px; }
+  .botonContacto:hover {
+    background-color: #e5e5e5; }
+
+.botonFormulario {
+  font-weight: bold;
+  padding: 5px;
+  color: black;
+  background-color: #e5e5e5;
+  border-radius: 10px; }
+  .botonFormulario:hover {
+    background-color: #8cd16d; }
+
+.imagenEmpresa {
+  text-align: center; }
+
+.imagenEmpresa2 {
+  text-align: center;
+  max-width: 100%;
+  max-height: 100%; }
+
 * {
   font-family: "Poppins", sans-serif; }
 
@@ -86,12 +122,11 @@ a {
 .mapa {
   text-align: center; }
 
-.redes {
-  position: fixed;
-  top: 40%;
-  /* bottom: 15px; */
-  left: 10px; }
-
+/* .redes {
+    position: fixed;
+    top: 40%;
+    left: 10px;
+  } */
 .redesBoton {
   width: 55px;
   height: 55px;
@@ -150,12 +185,12 @@ section p {
   background: linear-gradient(white, #e5e5e5); }
 
 .fondo {
-  background: #444;
+  background: #e5e5e5;
   margin: 0%;
   padding: 15px;
   font-family: 'Lato', sans-serif; }
   .fondo h1 {
-    color: white;
+    color: black;
     text-align: center; }
 
 .galeria {

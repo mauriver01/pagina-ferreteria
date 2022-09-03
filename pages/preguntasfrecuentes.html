@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ferreteria Popular - Preguntas frecuentes</title>
+    <meta name="description" content="Consultá y evacua todas tus dudas">
+    <link rel="shortcut icon" href="../img/ferreteria-1.png" type="image/x-icon">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="../CSS/style.css">
@@ -15,7 +17,7 @@
       <div class="navBar">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img src="../img/ferreteria-1.png" alt="Logo Ferreteria"></a>
+              <a class="navbar-brand" href="../index.html"><img data-aos="flip-left" src="../img/ferreteria-1.png" alt="Logo Ferreteria"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -54,14 +56,53 @@
     </header>
     <main>
         <h1>Todo lo que necesitas saber</h1>
-        <h2>¿Realizan envios a domicilio?</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore illo, ipsa iste architecto doloremque consectetur quas earum fugit quia nisi ipsam et consequuntur. Nostrum adipisci ducimus inventore minima ipsum incidunt.</p>
-        <h2>¿Como puedo pagar?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, distinctio esse cumque explicabo veniam sit aut itaque doloribus, debitis minus nam voluptas! Adipisci, obcaecati! Accusantium officiis sed dicta excepturi assumenda.</p>
-        <h2>¿Puedo dejar mercaderia pagada y retirar cuando la necesite?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias vitae minima earum tempore modi, perspiciatis error illo cupiditate deserunt, quis dolorem asperiores nulla in culpa. Quo eveniet tempora asperiores officia?</p>
-        <h2>¿Como solicito un presupuesto?</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cupiditate consectetur, blanditiis voluptatibus totam voluptas autem quam accusantium quaerat expedita, modi ipsum ipsa deleniti veniam nam! Beatae impedit quas voluptas.</p>
+        <div class="accordion m-2" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                ¿Realizan envios a domicilio?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <strong>Si!</strong><p>Realizamos envíos a todo San Juan, puede acercarse personalmente por nuestro local y realizar el pedido o bien,comunicarse via whatsapp, correo electronico o cualquiera de nuestras redes y se le tomará su correspondiente pedido, puede encontrar nuestras vias de comunicacion en la seccion "Contacto"  </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                ¿Como puedo pagar?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <strong>Tenemos varios metodos de pago!</strong><p>Usted puede pagar en efectivo en nuestro local, tambien aceptamos tarjeta de debito,tarjeta de credito de todos los bancos y ademas, incorporamos Mercado Pago para su comodidad</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                ¿Puedo dejar mercaderia pagada y retirar cuando la necesite?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+              <div class="accordion-body">
+                <strong>Si!</strong><p> Podes dejar tu mercaderia pagada y retirarla cuando quieras con envio gratuito siempre! Este es uno de los medios mas usados por nuestros clientes para evitar futuros aumentos, ya que de esta forma te congelamos el precio de la mercaderia. ¿Que pasa si necesito otra mercaderia? Te tomamos el precio de la mercaderia pagada y te respetamos al valor de hoy por un canje producto-producto! </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="presupuesto">
+          <strong>IMPORTANTE</strong>
+          <p>Para pedir presupuestos sobre nuestros productos,puede escribirnos por cualquiera de nuestras vias de comunicacion que encontrará en nuestra seccion "Contacto". Puede dirigirse a dicha seccion,haciendo click en el siguiente enlace:</p> 
+          <form>
+            <a href="contacto.html">
+                <input class="botonContacto" type="button" value="Contacto">
+            </a>
+        </form>
+        </div>
     </main>
     <footer class="footer">
         <strong> © 2022 FerreteriaPopular</strong>

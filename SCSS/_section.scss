@@ -18,13 +18,13 @@ section p {
 }
 
 .fondo {
-    background: #444;
+    background:$color-fondo-1;
     margin: 0%;
     padding: 15px;
     font-family: 'Lato', sans-serif; 
 
     h1 {
-        color: $color-principal;
+        color: black;
         text-align: center;
     }
 }
