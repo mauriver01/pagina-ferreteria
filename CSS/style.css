@@ -122,11 +122,6 @@ a {
 .mapa {
   text-align: center; }
 
-/* .redes {
-    position: fixed;
-    top: 40%;
-    left: 10px;
-  } */
 .redesBoton {
   width: 55px;
   height: 55px;
@@ -260,7 +255,7 @@ section p {
   color: black;
   padding: 5px;
   border-radius: 50%;
-  line-height: 25px; }
+  line-height: 15px; }
 
 .buscarCategoria {
   background: linear-gradient(#e5e5e5, white);
